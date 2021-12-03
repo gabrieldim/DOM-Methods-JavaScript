@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Zad2</h3>
+    <br>
+    <br>
+
+
+    <button  onclick="generate()" id="photos">Click me</button>
+
+</body>
+<script>
+    function generate(){
+       var picture =  Math.floor(Math.random() * 3);
+       photos = document.getElementById('photos')
+       if(parseInt(picture)==0){
+           photos.innerHTML = `<img src="https://farm5.staticflickr.com/4060/4567292488_5d3f4b05f6_z.jpg">`
+       }if(parseInt(picture)==1){
+        photos.innerHTML = `<img src="https://farm5.staticflickr.com/4060/4567292488_5d3f4b05f6_z.jpg">`
+       }else{
+        photos.innerHTML = `<img src="https://farm5.staticflickr.com/4060/4567292488_5d3f4b05f6_z.jpg">`
+       }
+    }
+</script>
+</html>

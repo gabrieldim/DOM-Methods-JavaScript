@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id='prv'> <input type="number" id='vtor'><italic> i</italic> <br>
+    <input type="number" id='tret'> <input type="number" id='chetvorti'><italic> i</italic><br>
+    <button onclick="calculate()">Add</button>
+    <br>
+    <input type="number" id='petti'> <input type="number" id='shesti'><italic> i</italic>
+    
+</body>
+<script>
+    function calculate(){
+     var prv = document.getElementById('prv').value
+     var vtor = document.getElementById('vtor').value
+     var tret = document.getElementById('tret').value
+     var chetvorti = document.getElementById('chetvorti').value
+     var pettiV = document.getElementById('petti')
+     var shestiV = document.getElementById('shesti')
+    
+     
+        pettiV.value = parseInt(prv) + parseInt(tret);
+        shestiV.value = parseInt(vtor) + parseInt(chetvorti);
+     
+
+    }
+</script>
+</html> 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+ <title>About Me</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>About Me</h1>
+    <ul>
+        <li>Name: <span id="name"></span>
+        <li>Index: <span id="index"></span>
+        <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <button onclick='kopce()'>Fill Data</button>
+</body>
+<script>
+    function kopce(){
+        var name = document.getElementById('name')
+        var index = document.getElementById('index')
+        var hometown = document.getElementById('hometown')
+
+        var name2 =  prompt('Enter your name: ')
+        var index2 = prompt('Enter you id: ')
+        var hometown2 = prompt('Enter your city: ')
+
+        var c = confirm(name2 + " is your name");
+        if(c){
+            name.innerHTML = name2;
+            index.innerHTML = index2;
+            hometown.innerHTML = hometown2;
+        }
+        putColor();
+    }
+    function putColor(){
+        var city = document.getElementById('hometown');
+        city.parentNode.style.backgroundColor = 'red'
+    }
+
+</script>
+</html> 
